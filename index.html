@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<title>Sentence Analysis </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+	<h1 class="text-center p-3">Sentence Analysis</h1>
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div id="rslts" class="fw-bold text-end">
+					AI is training
+				</div>
+			</div>
+			<div class="col" id="progressbar">
+				<div class="spinner-border" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<hr class="w-50 ms-auto me-auto">
+	
+	<div class="container mt-3">
+
+		<label for="textfield" class="form-label">
+			Enter your sentence here
+		</label>
+		<input type="text" name="textfield" id="textfield" class="form-control">
+		<input class="btn btn-outline-success mt-2" onclick="execute(document.getElementById('textfield').value)"
+			type="submit" name="submit" id="submit" value="Submit">
+
+		<h3 class="text-center" style="display: none;" id="icon">🎲</h3>
+		<h3 id="result" class="fw-bold text-center">
+		</h3>
+
+	</div>
+
+	<footer class="text-center" style="margin-top: calc(10%);">
+		This is an experimental AI created using <a href="https://youtu.be/qQ25BCilqko ">this tutorial</a> 
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="brain.js"></script>
+	<script src="training-data.js"></script>
+	<script src="script.js"></script>
+
+
+</body>
+
+</html>
